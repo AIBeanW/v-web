@@ -1,8 +1,24 @@
 <template>
   <div id="app">
-    <v-test :title="'2222'"/>
+    <v-test :title="'2222'" @click="isShow = true"/>
+    <button @click="isShow = true">
+      点击
+    </button>
+    <v-dialogue v-model="isShow">
+      提示
+    </v-dialogue>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      isShow: false
+    }
+  },
+
+}
+</script>
 
 <style lang="scss">
 #app {

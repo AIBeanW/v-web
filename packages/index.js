@@ -1,6 +1,10 @@
 import Test from './test';
+import Dialogue from './dialogue';
 
-const components = [Test];
+const components = [
+    Test,
+    Dialogue
+];
 
 const install = function (Vue) {
     if (install.installed) return;
@@ -15,5 +19,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
     install,
-    Test
+    Test,
+    Dialogue
 };

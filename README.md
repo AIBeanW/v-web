@@ -2,12 +2,12 @@
 
 ## Install
 ```shell
-npm install @aibeanw/v-app -S
+npm install @aibeanw/v-web -S
 ```
 
 ## Quick Start
 ``` javascript
 import Vue from 'vue'
-import vApp from '@aibeanw/v-app'
+import vWeb from '@aibeanw/v-web'
 
-Vue.use(vApp)
+Vue.use(vWeb)

@@ -1,14 +1,14 @@
 {
-  "name": "@aibeanw/v-app",
-  "version": "0.1.0",
-  "description": "内部手机组件库",
-  "main": "lib/v-app.umd.min.js",
+  "name": "@aibeanw/v-web",
+  "version": "1.0.1",
+  "description": "内部PC组件库",
+  "main": "lib/v-web.umd.min.js",
   "keyword": "aibeanw",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name v-app --dest lib packages/index.js"
+    "lib": "vue-cli-service build --target lib --name v-web --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^2.6.5",
