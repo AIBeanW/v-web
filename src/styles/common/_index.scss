@@ -1,13 +1,2 @@
-.clearfix {
-    zoom: 1;
-}
-
-.clearfix:after {
-    content: ".";
-    width: 0;
-    height: 0;
-    visibility: hidden;
-    display: block;
-    clear: both;
-    overflow:hidden;
-}
+// TODO: 引入iconfont失败  晚点再看
+@import "./base.scss";

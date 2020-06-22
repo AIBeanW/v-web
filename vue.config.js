@@ -1,5 +1,10 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 module.exports = {
+    devServer: {
+        open: true
+    },
     // 修改默认的入口
     pages: {
         index: {
@@ -8,11 +13,18 @@ module.exports = {
             filename: 'index.html'
         }
     },
+    configureWebpack: {
+        plugins: [
+            new MiniCssExtractPlugin({
+                filename: `v-web.css`
+            })
+        ]
+    },
     chainWebpack: config => {
         // @指向examples目录
         // ~指向packages目录
         config.resolve.alias
-            .set('@', path.resolve('examples'))
+            .set('examples', path.resolve('examples'))
             .set('~', path.resolve('packages'));
         // lib目录是组件库最终打包好存放的地方，不需要eslint检查
         config.module

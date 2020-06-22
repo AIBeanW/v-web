@@ -1,9 +1,10 @@
-import Test from './test';
-import Dialogue from './dialogue';
+// TODO: 引入不好  晚点单独打包文件
+import '@/styles/index.scss';
+
+import CodeEditor from './code-editor';
 
 const components = [
-    Test,
-    Dialogue
+    CodeEditor
 ];
 
 const install = function (Vue) {
@@ -19,6 +20,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
     install,
-    Test,
-    Dialogue
+    CodeEditor
 };
